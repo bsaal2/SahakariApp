@@ -1,0 +1,40 @@
+<template name="home">
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Sahakari App</h1>
+  {{/contentFor}}
+
+  {{#contentFor 'headerButtonRight'}}
+    <a href="{{pathFor 'register'}}"><button class="button button-clear button-positive"><i class="icon ion-person"></i>Register</button></a>
+  {{/contentFor}}
+  
+  {{#ionView}}
+    {{#ionSubheaderBar}}
+        <h2 class="title"><i class="icon ion-log-in"></i>&nbsp;Login Form</h2>
+    {{/ionSubheaderBar}} 
+
+    {{#ionContent}}
+      <div class="row">
+      	<div class="col col-25"></div>
+      	<div class="col col-50 loginForm">
+      		<div class="list">
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label"><i class="icon ion-ios-personadd"></i>User Id</span>
+			    <input type="text" placeholder="User Id">
+			  </label>
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label"><i class="icon ion-pin"></i>Pincode</span>
+			    <input type="number" placeholder="Pincode">
+			  </label>
+			  <label class="item item-input item-stacked-label">
+			    <span class="input-label"><i class="icon ion-key"></i>Password</span>
+			    <input type="password" placeholder="Password">
+			  </label>
+		   </div>
+		   <button class="button button-block button-positive">
+		   	Login
+		   </button>
+      	</div>
+      </div>
+    {{/ionContent}}
+  {{/ionView}}
+</template>

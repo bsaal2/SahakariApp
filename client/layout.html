@@ -1,0 +1,11 @@
+<template name="layout">
+	{{#ionBody}}
+    {{> ionNavBar class="bar-calm"}}
+    {{#ionNavView class="wholebody"}}
+      {{> yield}}
+    {{/ionNavView}}
+    {{#ionFooterBar class="bar-calm"}}
+      <h1 class="title">&copy; copyright B-saal</h1>
+    {{/ionFooterBar}}
+  {{/ionBody}}
+</template>
